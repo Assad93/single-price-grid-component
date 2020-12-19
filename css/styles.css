@@ -154,4 +154,9 @@ html, body {
         width: 50%;
         border-radius: 0 0 5px 0;
     }
+
+    .call-to-action:hover {
+        transition: 0.8s;
+        opacity: 0.8;
+    }
 }
