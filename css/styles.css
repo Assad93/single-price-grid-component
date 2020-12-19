@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-community .title {
+    color:  hsl(179, 62%, 43%);
+    font-weight: 700;
+    padding: 15px;
+}
+
+.join-community .subtitle {
+    color: hsl(71, 73%, 54%);
+    padding: 15px;
+}
+
+.join-community p {
+    color: hsl(218, 22%, 67%);
+    padding: 15px;
+}
+
+.monthly-subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 5px 0px;
+}
+
+.monthly-subscription .title {
+    font-weight: 700;
+    padding: 15px;
+}
+
+.monthly-subscription .price-container {
+    display: flex;
+    align-items: center;
+}
+
+.monthly-subscription .price {
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+.monthly-subscription .paytime {
+    color: hsl(204, 43%, 93%);
+    opacity: 0.5;
+}
+
+.monthly-subscription p {
+    padding: 10px 15px;
+}
+
+.monthly-subscription .call-to-action {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    color: hsl(204, 43%, 93%);
+    padding: 15px;
+}
+
+.why-us .title {
+    font-weight: 700px;
+    padding: 15px 0;
+}
+
+.why-us .text{
+    max-width: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 10px 0 0 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
