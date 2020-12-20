@@ -21,6 +21,12 @@ html, body {
     flex-direction: column;
 }
 
+.secondary-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .join-community {
     background-color: #FFF;
 }
@@ -28,39 +34,41 @@ html, body {
 .join-community .title {
     color:  hsl(179, 62%, 43%);
     font-weight: 700;
-    padding: 15px;
+    margin: 10px 0 10px 15px;
 }
 
 .join-community .subtitle {
     color: hsl(71, 73%, 54%);
-    padding: 15px;
+    margin: 0 0 5px 15px;
 }
 
 .join-community p {
     color: hsl(218, 22%, 67%);
-    padding: 0 15px 15px 15px;
+    margin: 0 10px 10px 15px;
+    text-align: justify;
 }
 
 .monthly-subscription {
+    flex-grow: 3;
     width: 100%;
     background-color: hsl(179, 62%, 43%);
     color: hsl(204, 43%, 93%);
-    padding: 5px 0px;
+    padding: 10px;
 }
 
 .monthly-subscription .title {
     font-weight: 700;
-    padding: 15px;
+    margin-bottom: 5px;
 }
 
 .monthly-subscription .price-container {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .monthly-subscription .price {
     font-size: 30px;
-    padding: 0 15px;
 }
 
 .monthly-subscription .paytime {
@@ -69,13 +77,13 @@ html, body {
 }
 
 .monthly-subscription p {
-    padding: 10px 15px;
+    margin-bottom: 35px;
 }
 
 .monthly-subscription .call-to-action {
     display: block;
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto 10px auto;
     padding: 15px;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -86,26 +94,27 @@ html, body {
 }
 
 .why-us {
+    flex-grow: 1;
     width: 100%;
     background-color: hsl(179, 62%, 43%);
     opacity: 0.8;
     color: hsl(204, 43%, 93%);
-    padding: 15px;
+    padding: 10px;
 }
 
 .why-us .title {
     font-weight: 700;
-    padding: 15px 0;
+    margin-bottom: 10px;
 }
 
 .why-us .text{
-    max-width: 50%;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    padding: 10px 0 0 0;
 }
 
 .attribution a { 
@@ -122,8 +131,8 @@ html, body {
     }
 
     .container {
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -137,6 +146,7 @@ html, body {
 
     .join-community {
         border-radius: 5px 5px 0 0;
+        padding: 10px;
     }
 
     .monthly-subscription {
@@ -145,16 +155,38 @@ html, body {
 
         display: flex;
         flex-direction: column;
-        padding: 20px 20px;
+        padding: 10px;
+    }
+
+    .monthly-subscription .price-container {
+        margin: 20px auto;
+    }
+
+    .monthly-subscription .price {
+        font-size: 50px;
     }
 
     .monthly-subscription p {
-        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 25px;
     }
 
     .why-us {
         width: 50%;
         border-radius: 0 0 5px 0;
+        position: relative;
+        padding: 10px;
+    }
+
+    .why-us .text {
+        margin-top: 50px;
+    }
+
+    .why-us footer {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .call-to-action:hover {
